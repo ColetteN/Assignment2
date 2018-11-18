@@ -1,7 +1,19 @@
+<html>
+
 <?php
-/**
- * Created by PhpStorm.
- * User: ColetteNash
- * Date: 08/11/2018
- * Time: 10:39
- */
+include ('header.php');
+?>
+<body>
+
+<div class="content">
+    <h2>Main Page Content</h2><br><br>
+</div>
+
+
+</body>
+
+<?php
+include ('footer.php');
+?>
+
+</html>
