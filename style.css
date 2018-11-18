@@ -2,21 +2,40 @@ body{
     font-family: Arial;
 }
 
+h1{
+    color: #9410ef;
+}
 h2{
-    margin-left: 10%;
-    color: #d55fef;
+    color: #9410ef;
 }
 
-fieldset{
-    border-radius: 5px;
+#main{
+    text-align: center;
+}
+#login{
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top:5%;
+    width:30%;
+    display: inline-block;
     background-color: #f1d0f2;
-    padding: 20px;
-    width:50%;
-    margin-left: 10%;
     box-shadow: #b5b5b5 10px 10px 5px;
+    border-radius: 6px;
+}
+#inner{
+    margin:50px;
+}
+#error{
+    font-size:14px;
+    color:#cc0000;
+    margin-top:10px
+}
+label{
+    color: #9410ef;
+    font-size: large;
 }
 input[type=text], select {
-    width: 80%;
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -25,28 +44,16 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=file] {
-    width: 30%;
-    height:5%;
-    background-color: #a192b5;
-    color: black;
-    padding: 8px 4px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
 input[type=submit] {
-    width: 80%;
-    background-color: #d55fef;
+    width: 30%;
+    background-color: #9410ef;
     color: white;
     padding: 14px 20px;
-    font-size: 16px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: large;
 }
 
 input[type=submit]:hover {
