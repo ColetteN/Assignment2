@@ -6,7 +6,7 @@
  * Time: 10:40
  */
 
-class ShopClass
+class ProductClass
 {
 
 }
