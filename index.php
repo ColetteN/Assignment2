@@ -12,8 +12,5 @@ include ('header.php');
 
 </body>
 
-<?php
-include ('footer.php');
-?>
 
 </html>
