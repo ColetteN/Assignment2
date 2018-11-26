@@ -21,7 +21,7 @@ $user = $stmt->fetch();
     $stmt = $conn->query($sql);
 
 while($row = $stmt->fetch()) {
-    echo '<img src="images/watch.jpg?id='  . $row["p_id"] .  '">' . $row["p_name"] . '"/>';
+    echo '<img src="images/watch.jpg?id='  . $row["p_id"] .  '">' . $row["p_description"] . $row["p_name"] . $row["p_price"];
     var_dump($row);
 }
 
