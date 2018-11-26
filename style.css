@@ -10,18 +10,18 @@ h2{
     text-align: center;
     color: #9410ef;
 }
-div.gallery {
+div.product {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
 }
 
-div.gallery:hover {
+div.product:hover {
     box-shadow: #b5b5b5 10px 10px 5px;
 }
 
-div.gallery img {
+div.product img {
     width: 100%;
     height: auto;
 }
