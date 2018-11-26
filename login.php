@@ -14,8 +14,8 @@ session_start();
         <div id="inner" >
 
             <form  method = "post" action = "shopping.php">
-                <label>UserName  :</label><br /><input type = "text" name = "username" /><br /><br />
-                <label>Password  :</label><br /><input type = "password" name = "password" /><br/><br />
+                <label>UserName :</label><br /><input type = "text" name = "username" /><br /><br />
+                <label>Password :</label><br /><input type = "password" name = "password" /><br/><br />
                 <input type = "submit" value = " Submit "/><br />
             </form>
 

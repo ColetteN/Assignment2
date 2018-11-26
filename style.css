@@ -1,5 +1,6 @@
 body{
     font-family: Arial;
+    background-color: #e6e6e6;
 }
 
 h1{
@@ -33,9 +34,9 @@ div.desc {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 40%;
     overflow: hidden;
-    background-color: #333;
+    background-color: #1e1e1e;
 }
 
 li {
@@ -70,11 +71,6 @@ li a:hover {
 }
 #inner{
     margin:50px;
-}
-#error{
-    font-size:14px;
-    color:#cc0000;
-    margin-top:10px
 }
 label{
     color: #9410ef;

@@ -12,26 +12,16 @@ $user = $stmt->fetch();
 //var_dump($user);
 ?>
 
-<div class="product">
+
 <?php
-    //get all product images from the db table
-    //this is returned as an array
-    //loop through the array
+
     $sql = "SELECT * FROM products";
     $stmt = $conn->query($sql);
 
-while($row = $stmt->fetch()) {
-    echo '<img src="images/watch.jpg?id='  . $row["p_id"] .  '">' . $row["p_description"] . $row["p_name"] . $row["p_price"];
-    var_dump($row);
+while ($row = $stmt->fetch()) {
+    echo '<img src="images/watch.jpg?id='  . $row["p_id"] .  '">' . $row["p_name"] . " " .
+        $row["p_description"] . " " . $row["p_price"];
+    //var_dump($row);
 }
 
 ?>
-
-</div>
-
-
-<!---->
-<!--<div class="product">-->
-<!--    <img src="image/camera.jpg" alt="Camera" width="300" height="200">-->
-<!--</div>-->
-
