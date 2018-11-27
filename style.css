@@ -11,8 +11,11 @@ h2{
     text-align: center;
     color: #9410ef;
 }
+div.container{
+    margin-left: 25%;
+}
 div.product {
-    margin: 5px;
+    margin: 8px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
@@ -37,7 +40,7 @@ ul {
     margin: 0;
     padding-left: 40%;
     overflow: hidden;
-    background-color: #1e1e1e;
+    background-color: #6b2480;
 }
 
 li {
