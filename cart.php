@@ -1,14 +1,15 @@
 <?php
-include("dbConnect.php");
+include("Connect.php");
 include ('header.php');
 include ('nav.php');
 session_start();
 
-var_dump($_POST);
-
 //Get the post data and put in a var
 //Add the var to the session array
-$_SESSION["session_cart"]=[1,4];
+if($_SESSION['session_cart'] == null){
+    $_SESSION['session_cart'] = array();
+};
+array_push($_SESSION["session_cart"],$_POST["product_id"]);
 //Have an array of product ids in the session
 ?>
 <h2>The following items are in your Cart</h2>
