@@ -4,6 +4,24 @@ include("dbConnect.php");
 include ('header.php');
 include ('nav.php');
 session_start();
+$value=$cookie_value;
+//session name your variables go here
+$_SESSION["session_name"]=$value;
+//echo $_SESSION["session_name"];
+
+////Cookie Stuff////
+//if cookie is not set make one
+if(!isset($_COOKIE["user"])) {
+    echo "no cookie:";
+    //make the cookie here and set timestamp
+    setcookie("user", time(), time() + (86400 * 30), "/"); // 86400 = 1 day
+    //create the var for the cookie value now that it is set
+    $cookie_value = $_COOKIE["user"];
+    //either way set the value of the cookie
+} else {
+    $cookie_value = $_COOKIE["user"];
+}
+echo "user";
 
 $username = $_POST['username'];
 $password = $_POST['password'];
