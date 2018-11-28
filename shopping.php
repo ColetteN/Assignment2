@@ -50,10 +50,12 @@ while ($row = $stmt->fetch()) {
             <?php echo '<img src="images/'  . $row["p_image"] .  '">';?>
 
             <div class="desc">
-                <?php echo $row["p_name"];?><br><br>
-                <?php echo $row["p_description"];?><br><br>
-                <?php echo "€" . $row["p_price"];?><br><br>
-                <p><input style="width: 100%" type="submit" value="Add to Cart" /></p><br>
+                <?php echo '<input type="hidden"  name="product_id" value="' . $row["p_id"] . '"/>'?>
+                <p><?php echo $row["p_name"];?></p>
+                <p><?php echo $row["p_description"];?></p>
+                <p><?php echo "€" . $row["p_price"];?></p>
+                <p><input style="width: 100%" type="submit" value="Add to Cart"/></p>
+
             </div>
 
         </form>
