@@ -1,5 +1,5 @@
 <?php
-include("Connect.php");
+include("dbConnect.php");
 include ('header.php');
 include ('nav.php');
 session_start();
@@ -37,12 +37,13 @@ array_push($_SESSION["session_cart"],$_POST["product_id"]);
                     <p><?php echo $row["p_name"]; ?></p>
                     <p><?php echo $row["p_description"]; ?></p>
                     <p><?php echo "€" . $row["p_price"]; ?></p>
+                    <p><input style="width: 100%" type="submit" value="Remove"/></p>
                 </div>
             </div>
         </div>
 
         <?php
+        }
     }
-}
 }
 ?>
