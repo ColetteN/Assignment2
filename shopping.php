@@ -27,8 +27,6 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 ?>
 
-
-
 <?php
 $stmt = $conn->prepare('SELECT * FROM userlogin WHERE username=:username AND password=:password');
 $stmt->execute(['username'=> $username, 'password'=> $password]);
