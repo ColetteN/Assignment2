@@ -23,8 +23,6 @@ array_push($_SESSION["session_cart"],$_POST["product_id"]);
     $stmt = $conn->query($sql);
     $cart_product = $_POST['p_id'];
 
-
-
     while ($row = $stmt->fetch()) {
     foreach ($_SESSION["session_cart"] as $product_id) {
     if ($row["p_id"] == $product_id) {
@@ -37,7 +35,6 @@ array_push($_SESSION["session_cart"],$_POST["product_id"]);
                     <p><?php echo $row["p_name"]; ?></p>
                     <p><?php echo $row["p_description"]; ?></p>
                     <p><?php echo "€" . $row["p_price"]; ?></p>
-                    <p><input style="width: 100%" type="submit" value="Remove"/></p>
                 </div>
             </div>
         </div>
