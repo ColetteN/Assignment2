@@ -1,5 +1,5 @@
 <?php
-include("dbConnect.php");
+include('dbConnect.php');
 session_start();
 
 function LogIn()

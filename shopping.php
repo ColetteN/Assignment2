@@ -1,7 +1,8 @@
 <?php
-include("dbConnect.php");
+include('dbConnect.php');
 include ('header.php');
 include ('nav.php');
+include ('functions.php');
 
 session_start();
 
