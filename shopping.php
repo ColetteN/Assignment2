@@ -3,7 +3,9 @@
 include("dbConnect.php");
 include ('header.php');
 include ('nav.php');
+
 session_start();
+
 $value=$cookie_value;
 //session name your variables go here
 $_SESSION["session_name"]=$value;
