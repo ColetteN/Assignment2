@@ -3,6 +3,7 @@ include('dbConnect.php');
 include ('header.php');
 include ('nav.php');
 include ('functions.php');
+//include('LoginClass.php');
 
 session_start();
 
@@ -23,16 +24,10 @@ if(!isset($_COOKIE["user"])) {
 } else {
     $cookie_value = $_COOKIE["user"];
 }
-echo "user";
-
-$username = $_POST['username'];
-$password = $_POST['password'];
+//echo "user";
 ?>
 
 <?php
-$stmt = $conn->prepare('SELECT * FROM userlogin WHERE username=:username AND password=:password');
-$stmt->execute(['username'=> $username, 'password'=> $password]);
-$user = $stmt->fetch();
 echo("<h2>Welcome" . " " . $username . "</h2>" . "<br><br>");
 
 $sql = "SELECT * FROM products";

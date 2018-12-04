@@ -1,7 +1,6 @@
 <?php
 include("dbConnect.php");
 include("header.php");
-include ("functions.php");
 
 session_start();
 
@@ -16,7 +15,7 @@ session_start();
 
         <div id="inner" >
 
-            <form  method = "post" action = "shopping.php">
+            <form  method = "post" action = "functions.php">
                 <label>UserName :</label><br /><input type = "text" name = "username" /><br /><br />
                 <label>Password :</label><br /><input type = "password" name = "password" /><br/><br />
                 <input type = "submit" name="submit" value = " Submit "/><br />
