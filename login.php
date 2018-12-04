@@ -4,6 +4,7 @@ include("header.php");
 include ("functions.php");
 
 session_start();
+
 ?>
 
 <body>

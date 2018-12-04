@@ -2,11 +2,11 @@
 include('dbConnect.php');
 session_start();
 
-function LogIn()
+function LogIn($conn,$username, $password)
 {
     //session_start();
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+//    $username = $_POST['username'];
+//    $password = $_POST['password'];
 
     if(!empty($_POST['username']))   //checking
     {
@@ -29,7 +29,7 @@ function LogIn()
     }
 
 }
-if(isset($_POST['submit']))
-{
-    LogIn();
-}
+//if(isset($_POST['submit']))
+//{
+//    LogIn();
+//}
