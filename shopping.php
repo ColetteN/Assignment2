@@ -28,7 +28,7 @@ if(!isset($_COOKIE["user"])) {
 ?>
 
 <?php
-echo("<h2>Welcome" . " " . $username . "</h2>" . "<br><br>");
+//echo("<h2>Welcome" . " " . $username . "</h2>" . "<br><br>");
 
 $sql = "SELECT * FROM products";
 $stmt = $conn->query($sql);
